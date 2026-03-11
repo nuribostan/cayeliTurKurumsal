@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import logo from "@/assets/Çayeli Tur Logo Tasarımı_page-0001.jpg"
+import logo from "@/assets/cayeli-logo.jpg"
 import downArrow from "@/assets/down-arrow.png";
 import close from "@/assets/icons8-close-48 (1).png";
 import menu from "@/assets/icons8-menu-30.png";
