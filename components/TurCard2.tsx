@@ -32,7 +32,7 @@ const TurCard2 = ({
         />
       </div>
       <div className="mevcutTurlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full">
-        <h2 className="mevcutTurlarimiz-card-title font-bold text-3xl text-[#1f2c42]">
+        <h2 className="mevcutTurlarimiz-card-title font-bold text-2xl text-[#1f2c42]">
           {title}
         </h2>
         <p className="text-gray-400">{duration}</p>

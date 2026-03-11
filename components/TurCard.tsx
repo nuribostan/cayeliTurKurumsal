@@ -31,7 +31,7 @@ const TurCard = ({
         />
       </div>
       <div className="flex flex-col gap-3 justify-start items-start w-full grow">
-        <h2 className="font-bold text-2xl lg:text-3xl text-[#1f2c42] line-clamp-2">
+        <h2 className="font-bold text-2xl lg:text-2xl text-[#1f2c42] line-clamp-2">
           {title}
         </h2>
         <p className="text-gray-500 font-medium text-sm md:text-base">{duration}</p>

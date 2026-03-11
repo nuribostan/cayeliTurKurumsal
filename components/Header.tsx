@@ -33,7 +33,7 @@ const Header = () => {
         setGunubirlikMenu(item.subMenu ?? []);
       } else if (item.menu === "Konaklamalı Turlar") {
         setKonaklamaMenu(item.subMenu ?? []);
-      } else if (item.menu === "Yurtdışı Turları") {
+      } else if (item.menu === "Yurtdışı Turları") {
         setYurtdisiMenu(item.subMenu ?? []);
       }
     });

@@ -14,7 +14,7 @@ import Map from "../Map";
 
 const IletisimHero = () => {
   return (
-    <div className="iletisim-hero w-full overflow-hidden py-10">
+    <div className="iletisim-hero w-full overflow-hidden py-10 bg-gray-50">
       {/* Hero Banner Kısmı */}
 
       {/* İçerik Kısmı */}
@@ -165,6 +165,25 @@ const IletisimHero = () => {
               <p className="text-gray-500 text-xs md:text-sm mt-2">
                 Kampanyalar ve son dakika fırsatları için bizi takip edin.
               </p>
+            </div>
+
+            <div className="flex flex-col gap-4 pt-5 border-t solid border-gray-200 ">
+              <h3 className="text-lg md:text-xl font-bold text-black">Neden Çayeli Tur ?</h3>
+
+              <ul className="flex flex-col gap-2">
+                <li className="text-black">
+                  <p>&#x2713; 20+ Yıllık Tecrübe</p>
+                </li>
+                <li className="text-black">
+                  <p>&#x2713; Güvenli ve Konforlu Araçlar</p>
+                </li>
+                <li className="text-black">
+                  <p>&#x2713; Uygun Fiyat Garantisi </p>
+                </li>
+                <li className="text-black">
+                  <p>&#x2713; 7/24 Destek</p>
+                </li>
+              </ul>
             </div>
           </div>
 
