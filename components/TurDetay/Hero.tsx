@@ -11,6 +11,7 @@ interface TurProgramiProps {
     | {
         turName: string;
         turType: string;
+        turBanner: string;
         location: string;
         kalkis: string;
         kalkis_saat_1: string;
@@ -24,10 +25,8 @@ interface TurProgramiProps {
 const TurDetayHero = ({ tur }: TurProgramiProps) => {
   return (
     <div className="turDetay-hero w-full relative flex flex-col pb-0 mt-20">
-      {/* Resim ve Ana Başlık Alanı */}
       <div className="relative w-full h-[50vh] md:h-[60vh] lg:h-[calc(85vh-80px)]">
-        <Image src={bg} alt={tur?.turName || "Tur"} fill priority className="object-cover object-[0%_90%]" />
-        {/* Yazıların okunabilmesi için hafif karartma */}
+        <Image src={tur?.turBanner || bg} alt={tur?.turName || "Tur"} fill priority className="object-cover object-[0%_90%]" />
         <div className="absolute inset-0 bg-black/30 lg:bg-black/10"></div> 
 
         <div className="absolute top-1/4 left-[5%] lg:left-[7.5%] z-10 w-[90%]">
