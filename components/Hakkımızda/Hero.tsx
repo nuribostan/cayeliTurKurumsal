@@ -54,6 +54,13 @@ const HakkimizdaHero = () => {
                 Yenipazar Mah. 9Mart Cad. No:108/B Çayeli-RİZE
               </p>
             </li>
+
+            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
+                Tursab Belge No:
+              </span>
+              <p className="text-base md:text-lgsm:w-2/3">9652</p>
+            </li>
           </ul>
 
           <div className="flex flex-col gap-4 mt-4">

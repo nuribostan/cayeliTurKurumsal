@@ -22,7 +22,7 @@ const Turlar = () => {
   return (
     <div className="bg-white w-full h-auto flex flex-col items-center justify-center pt-12 lg:pt-10 gap-8 lg:gap-10">
       <div className="w-[90%] lg:w-[85%] mx-auto flex items-center justify-center lg:justify-start">
-        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-left">
+        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-left border-b border-gray-200 pb-4 w-full">
           Yurtdışı Turlarımız
         </h1>
       </div>

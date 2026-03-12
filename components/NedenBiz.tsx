@@ -8,7 +8,7 @@ const NedenBiz = () => {
   return (
     <div className="neden-biz w-full flex flex-col items-center justify-center bg-white gap-8 pb-10 lg:pt-0 lg:pb-10">
       <div className="neden-biz-title w-[90%] lg:w-[85%] mx-auto flex items-center justify-center lg:justify-start">
-        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-left w-full">Neden Biz?</h1>
+        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-left w-full border-b border-gray-200 pb-4">Neden Biz?</h1>
       </div>
 
       <div className="neden-biz-content grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 w-[90%] lg:w-[85%] mx-auto">
