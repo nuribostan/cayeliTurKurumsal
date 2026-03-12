@@ -55,7 +55,7 @@ const Hero = () => {
               <Image src={plane} alt="" width={80} height={80} className=" h-full object-contain w-30" />
             </div>
             <p className="text-lg md:text-xl font-medium text-black">
-              Yurtdışı Turlar
+              Yurtdışı Turları
             </p>
           </div>
         </div>
