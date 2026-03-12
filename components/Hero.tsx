@@ -23,18 +23,18 @@ const Hero = () => {
       </div>
       <div className="hero-content w-full h-full flex flex-col justify-center lg:justify-start items-center lg:items-start gap-10 p-5 lg:pl-24 lg:pt-24 z-10">
         <div className="hero-title flex flex-col justify-center lg:justify-start items-center lg:items-start gap-5 z-10">
-          <h1 className="text-4xl lg:text-5xl text-white lg:text-[#1f2c42] font-bold text-center lg:text-start drop-shadow-md lg:drop-shadow-none">
+          <h1 className="text-4xl lg:text-5xl text-white lg:text-[#1f2c42] font-bold text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
             Hayalinizdeki Turu <br className="hidden md:block" />
             Birlikte Planlayalım
           </h1>
-          <h2 className="text-xl lg:text-2xl text-gray-200 lg:text-[#263144] font-medium text-center lg:text-start drop-shadow-md lg:drop-shadow-none">
+          <h2 className="text-xl lg:text-2xl text-gray-200 lg:text-[#263144] font-medium text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
             Günübirlik, konaklamalı ve yurtdışı turlarda <br className="hidden md:block" />
             güvenilir seyahat deneyimi
           </h2>
         </div>
 
-        <div className="hero-tours flex flex-col md:flex-row justify-center lg:justify-start items-center gap-4 z-10 w-full">
-          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+        <div className="hero-tours flex flex-col md:flex-row justify-start lg:justify-start items-start gap-4 z-10 w-full">
+          <div className="hero-tours-item w-4/5 sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
               <Image src={van} alt="" width={60} height={60} className="w-full h-full object-contain" />
             </div>
@@ -42,7 +42,7 @@ const Hero = () => {
               Günübirlik Turlar
             </p>
           </div>
-          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+          <div className="hero-tours-item w-4/5 sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
               <Image src={bed} alt="" width={60} height={60} className="w-full h-full object-contain mb-2" />
             </div>
@@ -50,7 +50,7 @@ const Hero = () => {
               Konaklamalı Turlar
             </p>
           </div>
-          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+          <div className="hero-tours-item w-4/5 sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
               <Image src={plane} alt="" width={80} height={80} className=" h-full object-contain w-30" />
             </div>

@@ -20,7 +20,7 @@ const DevamEdenTurlar = () => {
     return <div className="text-center py-20 text-red-500">Hata: {error}</div>;
 
   return (
-    <div className=" bg-white w-full h-auto flex flex-col items-start justify-center pb-20 pt-0 gap-10 max-[769px]:pt-10">
+    <div className=" bg-white w-full h-auto flex flex-col items-start justify-center pb-20 pt-0 gap-10">
       <div className="gunubirlik-turlar-title  w-[85%] m-auto">
         <h1 className="text-4xl text-[#1f2c42] font-bold max-md:text-center">
           Güncel Popüler Turlarımız
