@@ -8,7 +8,7 @@ const Turlarimiz = () => {
   return (
     <section className="turlarimiz bg-white w-full h-fit py-10 lg:py-10 flex flex-col gap-10">
       <div className="turlarimiz-title text-left w-[90%] lg:w-[85%] mx-auto">
-        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
+        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold max-md:text-center">
           Turlarımız
         </h1>
       </div>

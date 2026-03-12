@@ -54,7 +54,7 @@ const TurDetayHero = ({ tur }: TurProgramiProps) => {
       <div className="w-[90%] lg:w-[95%] mx-auto relative z-20 -mt-12 lg:-mt-30 flex flex-col lg:flex-row justify-between items-end gap-6 lg:gap-10">
         
         {/* Saat Rozetleri (Sol Taraf) */}
-        <div className="w-full lg:w-full grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="w-full lg:w-full grid grid-cols-1 sm:grid-cols-3 gap-4 max-[769px]:mt-16">
           {[tur?.kalkis_saat_1, tur?.kalkis_saat_2, tur?.donus_saat].map((saat, idx) => (
             saat && (
               <div key={idx} className="bg-white p-4 lg:p-5 rounded-2xl flex justify-center items-center gap-3 shadow-xl border border-gray-100">

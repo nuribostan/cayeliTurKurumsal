@@ -6,7 +6,7 @@ import support from "@/assets/nedenBiz/icons8-support-50.png";
 
 const NedenBiz = () => {
   return (
-    <div className="neden-biz w-full flex flex-col items-center justify-center bg-white gap-8 pb-10 lg:pt-0 lg:pb-10">
+    <div className="neden-biz w-full flex flex-col items-center justify-center bg-white gap-8 pb-10 pt-10 lg:pt-0 lg:pb-10">
       <div className="neden-biz-title w-[90%] lg:w-[85%] mx-auto flex items-center justify-center lg:justify-start">
         <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-left w-full">Neden Biz?</h1>
       </div>

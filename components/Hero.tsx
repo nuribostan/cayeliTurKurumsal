@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         <div className="hero-tours flex flex-col md:flex-row justify-center lg:justify-start items-center gap-4 z-10 w-full">
-          <div className="hero-tours-item w-full sm:w-70 h-auto md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
               <Image src={van} alt="" width={60} height={60} className="w-full h-full object-contain" />
             </div>
@@ -42,7 +42,7 @@ const Hero = () => {
               Günübirlik Turlar
             </p>
           </div>
-          <div className="hero-tours-item w-full sm:w-70 h-auto md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
               <Image src={bed} alt="" width={60} height={60} className="w-full h-full object-contain mb-2" />
             </div>
@@ -50,9 +50,9 @@ const Hero = () => {
               Konaklamalı Turlar
             </p>
           </div>
-          <div className="hero-tours-item w-full sm:w-70 h-auto md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
+          <div className="hero-tours-item w-full sm:w-70 h-15 md:h-20 bg-white rounded-xl flex justify-start items-center p-4 gap-4 shadow-2xl">
             <div className="hero-tours-item-img bg-[#597e59] rounded-full flex justify-center items-center p-2.5 w-12 h-12 md:w-15 md:h-15 shrink-0">
-              <Image src={plane} alt="" width={80} height={80} className="w-full h-full object-contain w-30" />
+              <Image src={plane} alt="" width={80} height={80} className=" h-full object-contain w-30" />
             </div>
             <p className="text-lg md:text-xl font-medium text-black">
               Yurtdışı Turlar

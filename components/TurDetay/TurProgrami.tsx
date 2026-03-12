@@ -18,7 +18,7 @@ interface TurProgramiProps {
 const TurProgrami = ({ tur }: TurProgramiProps) => {
   return (
     <div className="w-[90%] lg:w-[85%] mx-auto py-12 lg:py-10 flex flex-col gap-8 lg:gap-10">
-      <h1 className="text-3xl md:text-4xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-4">
+      <h1 className="text-3xl md:text-4xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-4 max-md:text-center">
         Tur Programı
       </h1>
 
@@ -41,7 +41,7 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
 
         {/* Alt Kolon: Fotoğraf Galerisi */}
         <div className="lg:col-span-2 order-3 flex flex-col gap-6 pt-6 lg:pt-0">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-2">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-2 max-md:text-center">
             Tur Fotoğrafları
           </h2>
           {/* Şık Bir Fotoğraf Izgarası (Masonry/Grid) */}
