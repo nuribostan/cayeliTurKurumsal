@@ -8,7 +8,7 @@ import badge5 from "@/assets/badges/Katman 6.png";
 
 const GunubirlikHero = () => {
   return (
-    <div className="GunubirlikTurlar w-full h-[calc(85svh-80px)] flex flex-col items-center justify-start relative pt-20 pb-10 text-white">
+    <div className="GunubirlikTurlar w-full min-h-[calc(85vh-80px)] lg:h-[calc(85vh-80px)] mt-10 flex flex-col items-center justify-start relative pt-12 px-4 text-white overflow-hidden">
       <div className="absolute inset-0 -z-10 w-full h-full">
         <Image
           src={gunubirlik}
