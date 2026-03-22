@@ -61,7 +61,7 @@ const TurUyari = () => {
                 key={item.id}
                 className="flex justify-start items-start gap-3 w-full"
               >
-                <span className="rounded-full w-2 h-2 bg-green-500 shrink-0 mt-2"></span>
+                <span className="rounded-full w-2 h-2 bg-red-500 shrink-0 mt-2"></span>
                 <p className="text-lg md:text-lg text-gray-700 font-medium">
                   {item.desc}
                 </p>
