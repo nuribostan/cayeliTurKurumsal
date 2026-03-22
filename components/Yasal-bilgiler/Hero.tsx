@@ -1,7 +1,7 @@
 const YasalBilgilerHero = () => {
   return (
     <div className="yasalBilgiler overflow-x-clip">
-      <div className="iletisim-content w-full h-full flex-col justify-start items-start bg-white pt-20 pb-10 px-10">
+      <div className="iletisim-content w-full h-full flex-col justify-start items-start bg-white pt-20 pb-10 px-10 max-md:px-5">
         <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-5">
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold mx-auto flex w-full justify-center items-center border-b solid  uppercase pt-10 pb-5">
             Yasal Bilgiler

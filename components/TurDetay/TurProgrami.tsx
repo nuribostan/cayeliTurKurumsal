@@ -28,7 +28,7 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
         Tur Programı
       </h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-5 items-start">
         {/* Sol Kolon: Tur Listesi */}
         <div className="lg:col-span-2 order-1 ">
           <ul className="flex flex-col w-full bg-white rounded-2xl shadow-sm border border-gray-200 p-2 lg:p-6">

@@ -49,7 +49,7 @@ const TurKapsamlari = () => {
 
  return (
 
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full py-10 bg-white">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full pt-5 bg-white">
 
       <div className="flex flex-col justify-start items-start gap-4 p-10 shadow-lg bg-white border border-gray-200 rounded-2xl">
         <h2 className="text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-4 w-full">
