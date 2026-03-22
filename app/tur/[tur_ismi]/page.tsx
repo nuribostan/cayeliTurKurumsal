@@ -31,8 +31,8 @@ async function getTurDetaylari(): Promise<TurItem[]> {
   const res = await fetch(
     "https://raw.githubusercontent.com/nuribostan/cayeliTurKurumsalData/refs/heads/main/turDetayList.json",
     {
-      next: { revalidate: 3600 },
-    },
+      cache: "no-store"
+    }
   );
 
   if (!res.ok) {
