@@ -22,7 +22,7 @@ const DevamEdenTurlar = () => {
   return (
     <div className=" bg-white w-full h-auto flex flex-col items-start justify-center pb-20 pt-0 gap-10">
       <div className="gunubirlik-turlar-title  w-[85%] m-auto">
-        <h1 className="text-4xl text-[#1f2c42] font-bold max-md:text-center border-b border-gray-200 pb-4">
+        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold text-center lg:text-center border-b border-gray-200 pb-4 w-full">
           Güncel Popüler Turlarımız
         </h1>
       </div>

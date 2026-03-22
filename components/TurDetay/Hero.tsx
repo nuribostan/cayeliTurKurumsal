@@ -30,9 +30,9 @@ const TurDetayHero = ({ tur }: TurProgramiProps) => {
         <div className="absolute inset-0 bg-black/30 lg:bg-black/10"></div> 
 
         <div className="absolute top-1/4 left-[5%] lg:left-[7.5%] z-10 w-[90%]">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white lg:text-[#1f2c42] font-bold flex flex-col lg:flex-row items-start lg:items-end gap-2 lg:gap-4 drop-shadow-lg lg:drop-shadow-none">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white  font-bold flex flex-col lg:flex-row items-start lg:items-end gap-2 lg:gap-4 drop-shadow-lg lg:drop-shadow-none">
             <span>{tur?.turName}</span>
-            <span className="font-medium text-gray-200 lg:text-[#4d6489] text-2xl md:text-3xl lg:text-4xl">{tur?.turType}</span>
+            <span className="font-medium text-white  text-2xl md:text-3xl lg:text-4xl">{tur?.turType}</span>
           </h1>
         </div>
 

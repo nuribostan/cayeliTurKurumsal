@@ -7,8 +7,8 @@ interface TurProgramiProps { tur: any; }
 
 const GezilecekYerler = ({ tur }: TurProgramiProps) => {
   return (
-    <div className="bg-white rounded-2xl w-full shadow-lg border border-gray-100 p-6 lg:p-8 flex flex-col gap-6">
-      <div className="flex justify-start items-center gap-3 border-b border-gray-100 pb-4">
+    <div className="bg-white rounded-2xl w-full shadow-lg border border-gray-200 p-6 lg:p-8 flex flex-col gap-6">
+      <div className="flex justify-start items-center gap-3 border-b border-gray-200 pb-4">
         <Image src={pin2} alt="pin" width={32} height={32} className="shrink-0" />
         <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42]">Gezilecek Yerler</h2>
       </div>

@@ -47,7 +47,7 @@ const DuyuruModal = () => {
         {/* Kapat Butonu (Mobilde üstte, Masaüstünde sağda dışarıda durur) */}
         <button
           onClick={() => setIsOpen(false)}
-          className="absolute -top-12 right-0 md:-right-12 md:top-0 bg-white/20 hover:bg-red-600 rounded-full p-2 md:p-3 transition-colors z-60"
+          className="absolute -top-7 right-0 md:-right-12 md:top-0 bg-white/20 hover:bg-red-600 rounded-full p-2 md:p-3 transition-colors z-60"
           aria-label="Kapat"
         >
           <Image

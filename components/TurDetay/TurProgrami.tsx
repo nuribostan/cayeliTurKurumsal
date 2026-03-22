@@ -1,3 +1,5 @@
+import TurKapsamlari from "../TurKapsamlari";
+import TurUyari from "../TurUyari";
 import GezilecekYerler from "./GezilecekYerler";
 import Tavsiyeler from "./Tavsiyeler";
 import TurListItem from "./TurListItem";
@@ -28,17 +30,20 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
         {/* Sol Kolon: Tur Listesi */}
-        <div className="lg:col-span-2 order-1">
-          <ul className="flex flex-col w-full bg-white rounded-2xl shadow-sm border border-gray-100 p-2 lg:p-6">
+        <div className="lg:col-span-2 order-1 ">
+          <ul className="flex flex-col w-full bg-white rounded-2xl shadow-sm border border-gray-200 p-2 lg:p-6">
             {tur?.list.map((item, index) => (
               <TurListItem key={index} desc={item.desc} />
             ))}
           </ul>
+
+          <TurKapsamlari />
         </div>
 
         <div className="lg:col-span-1 lg:row-span-2 order-2 flex flex-col gap-6 lg:sticky lg:top-24">
           <GezilecekYerler tur={tur} />
           <Tavsiyeler tur={tur} />
+          <TurUyari />
         </div>
 
         {tur?.turFotograflari && (

@@ -1,13 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import logo from "@/assets/cayeli-logo.jpg"
+import logo from "@/assets/cayeli-logo.jpg";
 import downArrow from "@/assets/down-arrow.png";
 import close from "@/assets/icons8-close-48 (1).png";
 import menu from "@/assets/icons8-menu-30.png";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import menuDB from "@/db/menu/db";
 import instagram from "@/assets/iletisim/instagram.png";
 import facebook from "@/assets/iletisim/facebook.png";
 
@@ -26,6 +25,29 @@ const Header = () => {
   const [gunubirlikMenu, setGunubirlikMenu] = useState<MenuItem[]>([]);
   const [konaklamaMenu, setKonaklamaMenu] = useState<MenuItem[]>([]);
   const [yurtdisiMenu, setYurtdisiMenu] = useState<MenuItem[]>([]);
+  const [menuDB, setMenuDB] = useState<MenuItem[]>([]);
+
+  useEffect(() => {
+    const res = fetch(
+      "https://raw.githubusercontent.com/nuribostan/cayeliTurKurumsalData/refs/heads/main/menu.json",
+      {
+        next: { revalidate: 3600 },
+      },
+    );
+
+    if (res) {
+      res
+        .then((response) => response.json())
+        .then((data) => {
+          setMenuDB(data);
+        })
+        .catch((error) => {
+          console.error("Veri çekme hatası:", error);
+        });
+    } else {
+      console.error("Veri çekilemedi!");
+    }
+  }, [menuDB]);
 
   useEffect(() => {
     menuDB.forEach((item) => {
@@ -33,11 +55,11 @@ const Header = () => {
         setGunubirlikMenu(item.subMenu ?? []);
       } else if (item.menu === "Konaklamalı Turlar") {
         setKonaklamaMenu(item.subMenu ?? []);
-      } else if (item.menu === "Yurtdışı Turları") {
+      } else if (item.menu === "Yurtdışı Turları") {
         setYurtdisiMenu(item.subMenu ?? []);
       }
     });
-  }, []);
+  }, [menuDB]);
 
   // Mobil menü açıkken arka planın kaymasını engelle
   useEffect(() => {
@@ -238,18 +260,20 @@ const Header = () => {
           <div className="flex flex-col border-b border-gray-100 pb-4">
             <div className="flex justify-between items-center w-full">
               {/* Yazıya tıklayınca sayfaya gider */}
-              <Link 
-                href="/gunubirlik-turlar" 
+              <Link
+                href="/gunubirlik-turlar"
                 className="text-xl font-bold hover:text-blue-600 transition-colors grow"
                 onClick={() => setIsOpen(false)}
               >
                 Günübirlik Turlar
               </Link>
-              
+
               {/* Oka tıklayınca alt menüyü açar (Dokunma alanını p-2 ile genişlettik) */}
-              <div 
-                className="p-2 cursor-pointer" 
-                onClick={() => setIsMobileGunubirlikOpen(!isMobileGunubirlikOpen)}
+              <div
+                className="p-2 cursor-pointer"
+                onClick={() =>
+                  setIsMobileGunubirlikOpen(!isMobileGunubirlikOpen)
+                }
               >
                 <Image
                   src={downArrow}
@@ -260,7 +284,7 @@ const Header = () => {
                 />
               </div>
             </div>
-            
+
             {/* Alt Menü İçeriği */}
             <div
               className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileGunubirlikOpen ? "max-h-96 mt-4" : "max-h-0"}`}
@@ -282,17 +306,17 @@ const Header = () => {
           <div className="flex flex-col border-b border-gray-100 pb-4">
             <div className="flex justify-between items-center w-full">
               {/* Yazıya tıklayınca sayfaya gider */}
-              <Link 
-                href="/konaklamali-turlar" 
+              <Link
+                href="/konaklamali-turlar"
                 className="text-xl font-bold hover:text-blue-600 transition-colors grow"
                 onClick={() => setIsOpen(false)}
               >
                 Konaklamalı Turlar
               </Link>
-              
+
               {/* Oka tıklayınca alt menüyü açar */}
-              <div 
-                className="p-2 cursor-pointer" 
+              <div
+                className="p-2 cursor-pointer"
                 onClick={() => setIsMobileKonaklamaOpen(!isMobileKonaklamaOpen)}
               >
                 <Image
@@ -304,7 +328,7 @@ const Header = () => {
                 />
               </div>
             </div>
-            
+
             {/* Alt Menü İçeriği */}
             <div
               className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileKonaklamaOpen ? "max-h-96 mt-4" : "max-h-0"}`}
@@ -325,18 +349,18 @@ const Header = () => {
           {/* Mobil Akordiyon: Yurtdışı Turlar */}
           <div className="flex flex-col border-b border-gray-100 pb-4">
             <div className="flex justify-between items-center w-full">
-               {/* Yazıya tıklayınca sayfaya gider */}
-              <Link 
-                href="/yurtdisi-turlar" 
+              {/* Yazıya tıklayınca sayfaya gider */}
+              <Link
+                href="/yurtdisi-turlar"
                 className="text-xl font-bold hover:text-blue-600 transition-colors grow"
                 onClick={() => setIsOpen(false)}
               >
                 Yurtdışı Turları
               </Link>
-              
-               {/* Oka tıklayınca alt menüyü açar */}
-              <div 
-                className="p-2 cursor-pointer" 
+
+              {/* Oka tıklayınca alt menüyü açar */}
+              <div
+                className="p-2 cursor-pointer"
                 onClick={() => setIsMobileYurtdisiOpen(!isMobileYurtdisiOpen)}
               >
                 <Image
@@ -348,7 +372,7 @@ const Header = () => {
                 />
               </div>
             </div>
-            
+
             {/* Alt Menü İçeriği */}
             <div
               className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileYurtdisiOpen ? "max-h-96 mt-4" : "max-h-0"}`}

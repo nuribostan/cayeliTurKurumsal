@@ -21,30 +21,32 @@ const TurCard2 = ({
   const validUrl = url && url.trim() ? url : "#";
 
   return (
-    <div className="mevcutTurlarimiz-card rounded-2xl flex flex-col  justify-center items-center gap-5 p-5 shadow-[0px_0px_10px_0px_rgba(0,0,0,0.25)] w-full shrink-0 max-md:w-full h-120">
-      <div className="mevcutTurlarimiz-card-img w-full h-full">
+   <div className="rounded-2xl flex flex-col justify-between items-center gap-5 p-5 shadow-lg bg-white w-full h-full border border-gray-50">
+      <div className="w-full h-56 sm:h-64 overflow-hidden rounded-2xl shrink-0">
         <Image
           src={imageSource}
-          alt=""
-          className="object-cover w-full h-80 rounded-2xl"
+          alt={title}
+          className="object-cover w-full h-full hover:scale-105 transition-transform duration-500"
           width={500}
           height={500}
         />
       </div>
-      <div className="mevcutTurlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full">
-        <h2 className="mevcutTurlarimiz-card-title font-bold text-2xl text-[#1f2c42]">
+      <div className="flex flex-col gap-3 justify-start items-start w-full grow">
+        <h2 className="font-bold text-2xl lg:text-2xl text-[#1f2c42] line-clamp-2">
           {title}
         </h2>
-        <p className="text-gray-400">{duration}</p>
-        <div className="flex justify-between items-center w-full gap-10">
-          <div className="flex justify-center items-center gap-2.5">
-            <Image src={pin} alt="pin" width={20} height={20} />
-            <p className="text-black font-medium">{location}</p>
+        <p className="text-gray-500 font-medium text-sm md:text-base">{duration}</p>
+        
+        {/* Alt Kısım - Buton ve Konum her zaman en altta hizalı kalır */}
+        <div className="flex justify-between items-center w-full gap-4 mt-auto pt-4 border-t border-gray-100">
+          <div className="flex justify-start items-center gap-2">
+            <Image src={pin} alt="pin" width={20} height={20} className="shrink-0" />
+            <p className="text-black font-medium text-sm md:text-base line-clamp-1">{location}</p>
           </div>
 
-          <div className="mevcutTurlarimiz-card-button bg-blue-600 w-1/2  text-center py-2 rounded-lg text-white font-medium hover:bg-blue-500 transition-colors">
-            <Link className="font-bold" href={validUrl}>
-              Turları İncele
+          <div className="bg-blue-600 text-center py-2 px-4 rounded-lg text-white font-medium hover:bg-blue-500 transition-colors shrink-0">
+            <Link className="font-bold text-sm md:text-base" href={validUrl}>
+              Turu İncele
             </Link>
           </div>
         </div>

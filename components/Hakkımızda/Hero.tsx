@@ -90,7 +90,7 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Hizmet Anlayışımız
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify">
             Çayeli Tur olarak önceliğimiz; misafirlerimize güvenli, konforlu ve
             nitelikli bir seyahat deneyimi sunmaktır. Turlarımızda;
           </p>
@@ -120,7 +120,7 @@ const HakkimizdaHero = () => {
               </p>
             </li>
           </ul>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed">
             esas alınır. Amacımız, misafirlerimizin sadece bir geziye değil, iyi
             organize edilmiş ve keyifli bir deneyime katılmalarını sağlamaktır.
           </p>
@@ -131,7 +131,7 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Turlarımız
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify">
             Firmamız, Karadeniz’in en özel noktalarını kapsayan geniş bir tur
             yelpazesi sunmaktadır. Başlıca hizmet alanlarımız:
           </p>
@@ -161,7 +161,7 @@ const HakkimizdaHero = () => {
               </p>
             </li>
           </ul>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed">
             Seyahat acentemiz, Karadeniz’in eşsiz güzelliklerinden ilham alarak
             yola çıkmış; bugün ise Türkiye’nin dört bir yanına ve yurt dışına
             uzanan kapsamlı tur hizmetleri sunmaktadır. Misafirlerimizin
@@ -177,14 +177,14 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Neden Çayeli Tur?
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
             Yerel bir acente olmamız, bölgeyi yüzeysel değil detaylarıyla
             tanımamızı sağlamaktadır. Mevsim koşullarından yol durumlarına,
             ziyaret edilecek noktaların en uygun zamanlarından alternatif
             güzergâhlara kadar her ayrıntı ekibimiz tarafından yakından takip
             edilir.
           </p>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
             Bu sayede misafirlerimize standart turların ötesinde, daha verimli,
             daha güvenli ve daha keyifli programlar sunmaktayız.
           </p>
@@ -221,7 +221,7 @@ const HakkimizdaHero = () => {
             </div>
           </div>
 
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed  mt-4">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed  mt-4">
             Farklı kapasitelere sahip modern araç filomuzla; 8, 16, 19, 27 ve 45
             kişilik koltuk düzenlerine kadar uzanan seçenekler sunarak güvenli
             ve konforlu ulaşım hizmetleri sağlıyoruz. Kurumsal hizmet
@@ -238,7 +238,7 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Servis Hizmetlerimiz
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
             Turizm faaliyetlerimizin yanı sıra, Çayeli Tur; okul, fabrika ve
             personel servis taşımacılığı alanlarında da hizmet vermektedir.
             Kurumsal taşımacılık süreçleri, planlama, süreklilik ve mevzuata
@@ -255,13 +255,13 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Kalite ve Güven
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
             Çayeli Tur olarak tüm hizmet süreçlerimizde şeffaflık, güvenilirlik
             ve misafir memnuniyeti temel ilkelerimizdir. Tur öncesinden dönüşe
             kadar her aşamada misafirlerimizle birebir iletişim kurar, ihtiyaç
             ve beklentilere göre en uygun çözümleri sunarız.
           </p>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
             Bugüne kadar binlerce misafirimizi Karadeniz’in eşsiz doğasıyla
             buluşturmuş olmanın verdiği sorumlulukla, hizmet kalitemizi her
             geçen gün daha da ileri taşımayı hedefliyoruz.
@@ -273,7 +273,7 @@ const HakkimizdaHero = () => {
           <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold ">
             Sizi de Aramızda Görmekten Memnuniyet Duyarız
           </h1>
-          <p className="text-gray-700 text-base md:text-lg lg:text-lgtext-justify leading-relaxed  ">
+          <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed  ">
             Karadeniz’i güvenilir bir organizasyonla, doğru rotalar ve
             profesyonel bir ekip eşliğinde keşfetmek istiyorsanız, Çayeli Tur
             olarak sizleri memnuniyetle ağırlamaktan mutluluk duyarız.

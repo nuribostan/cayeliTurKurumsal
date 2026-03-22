@@ -136,7 +136,7 @@ const IletisimHero = () => {
                   />
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.google.com/search?sa=X&sca_esv=b522c9179c1acadb&rlz=1C1FKPE_trTR1109TR1109&sxsrf=ANbL-n733VChE3Hdirv--1Ko7tK8SgViSw:1774204390640&q=%C3%87ayeli+Tur+Yorumlar&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NTAzNDawtLAwsTQ3Nrc0MjKz2MDI-IpR5HB7YmVqTqZCSGmRQmR-UWluTmLRIlaswgCefE61SAAAAA&rldimm=5061309884973792268&tbm=lcl&hl=tr-TR&ved=2ahUKEwiw1dmzkrSTAxUcSfEDHXtxKAYQ9fQKegQIIhAG&biw=1920&bih=929&dpr=1#lkt=LocalPoiReviews"
                   target="_blank"
                   className="hover:scale-110 transition-transform"
                 >
