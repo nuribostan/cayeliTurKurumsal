@@ -47,12 +47,10 @@ const TurKapsamlari = () => {
     );
   }
 
- return (
-
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full pt-5 bg-white">
-
-      <div className="flex flex-col justify-start items-start gap-4 p-10 shadow-lg bg-white border border-gray-200 rounded-2xl">
-        <h2 className="text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-4 w-full">
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-full mt-5">
+      <div className="flex flex-col justify-start items-start gap-4 p-6 shadow-lg bg-white border border-gray-200 rounded-2xl">
+        <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] w-full border-b border-gray-200 pb-4">
           ✔️ Ücrete Dahil Olanlar
         </h2>
         <ul className="flex flex-col gap-2 w-full">
@@ -63,7 +61,7 @@ const TurKapsamlari = () => {
                 className="flex justify-start items-start gap-3 w-full"
               >
                 <span className="rounded-full w-2 h-2 bg-green-500 shrink-0 mt-2"></span>
-                <p className="text-lg md:text-lg text-gray-700 font-medium">
+                <p className="text-base md:text-lg text-gray-800 leading-relaxed font-medium text-justify">
                   {item.desc}
                 </p>
               </li>
@@ -76,8 +74,8 @@ const TurKapsamlari = () => {
 
       {/* --- TURA DAHİL OLMAYANLAR BÖLÜMÜ --- */}
       {/* Aynı şekilde w-full ve h-full silindi */}
-      <div className="flex flex-col justify-start items-start gap-4 p-10 shadow-lg bg-white border border-gray-200 rounded-2xl">
-        <h2 className="text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-4 w-full">
+      <div className="flex flex-col justify-start items-start gap-4 p-6 shadow-lg bg-white border border-gray-200 rounded-2xl">
+        <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] w-full border-b border-gray-200 pb-4">
           ❌ Ücrete Dahil Olmayanlar
         </h2>
         <ul className="flex flex-col gap-2 w-full">
@@ -87,8 +85,8 @@ const TurKapsamlari = () => {
                 key={item.id}
                 className="flex justify-start items-start gap-3 w-full"
               >
-                <span className="rounded-full w-2 h-2 bg-red-500 shrink-0 mt-2"></span>
-                <p className="text-lg md:text-lg text-gray-700 font-medium">
+                <span className="rounded-full w-2 h-2 bg-green-500 shrink-0 mt-2"></span>
+                <p className="text-base md:text-lg text-gray-800 leading-relaxed font-medium text-justify">
                   {item.desc}
                 </p>
               </li>
@@ -98,7 +96,6 @@ const TurKapsamlari = () => {
           )}
         </ul>
       </div>
-
     </div>
   );
 };

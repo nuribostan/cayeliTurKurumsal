@@ -1,13 +1,13 @@
 const YasalBilgilerHero = () => {
   return (
-    <div className="yasalBilgiler overflow-x-clip">
-      <div className="iletisim-content w-full h-full flex-col justify-start items-start bg-white pt-20 pb-10 px-10 max-md:px-5">
-        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-5">
-          <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold mx-auto flex w-full justify-center items-center border-b solid  uppercase pt-10 pb-5">
+    <div className="yasalBilgiler overflow-x-clip w-full bg-white mt-20">
+      <div className="hakkimizda-content w-[90%] lg:w-[85%] mx-auto py-12 lg:py-10 flex flex-col gap-6 lg:gap-6 bg-white">
+        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-0 pb-4">
+          <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold mx-auto flex w-full justify-center items-center border-b solid pb-5 uppercase">
             Yasal Bilgiler
           </h1>
-          <div className="iletisim-title">
-            <h1 className="text-3xl text-[#1f2c42] font-bold">
+          <div className="iletisim-title py-5">
+            <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
               Rezervasyon Bilgileri
             </h1>
           </div>
@@ -61,9 +61,9 @@ const YasalBilgilerHero = () => {
           </p>
         </div>
 
-        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-5">
+        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-0 pb-4">
           <div className="iletisim-title">
-            <h1 className="text-3xl text-[#1f2c42] font-bold">
+            <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
               İptal ve İade Koşulları
             </h1>
           </div>
@@ -105,9 +105,9 @@ const YasalBilgilerHero = () => {
           </p>
         </div>
 
-        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-5">
+        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-0 pb-4">
           <div className="iletisim-title">
-            <h1 className="text-3xl text-[#1f2c42] font-bold">
+            <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
               Mesafeli Satış Sözleşmesi
             </h1>
           </div>
@@ -128,9 +128,9 @@ const YasalBilgilerHero = () => {
           </p>
         </div>
 
-        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-5">
+        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 border-b border-[#979797] py-0 pb-4">
           <div className="iletisim-title">
-            <h1 className="text-3xl text-[#1f2c42] font-bold">
+            <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
               Gizlilik Politikası{" "}
             </h1>
           </div>
@@ -177,9 +177,9 @@ const YasalBilgilerHero = () => {
           </p>
         </div>
 
-        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 py-5">
+        <div className="iletisim-item flex flex-col justify-start items-start gap-2.5 py-0">
           <div className="iletisim-title">
-            <h1 className="text-3xl text-[#1f2c42] font-bold">
+            <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold">
               KVKK Aydınlatma Metni
             </h1>
           </div>

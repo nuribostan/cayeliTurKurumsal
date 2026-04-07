@@ -18,7 +18,7 @@ const GezilecekYerler = ({ tur }: TurProgramiProps) => {
         {tur?.gezilecekYerler.map((item:any, index:number) => (
           <li key={index} className="flex justify-start items-start gap-3 w-full">
             <span className="rounded-full w-2 h-2 bg-green-500 shrink-0 mt-2"></span>
-            <p className="text-sm md:text-base text-gray-700 font-medium">{item.desc}</p>
+            <p className="text-base md:text-lg text-gray-800 leading-relaxed font-medium text-justify">{item.desc}</p>
           </li>
         ))}
       </ul>

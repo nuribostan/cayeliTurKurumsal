@@ -1,10 +1,7 @@
 import Image from "next/image";
-import bg from "@/assets/hakkimizda/hakkimizda-hero-bg.jpg";
-import logo from "@/assets/hakkimizda/123.png";
 import arac1 from "@/assets/hakkimizda/1.png";
 import arac2 from "@/assets/hakkimizda/2.png";
 import arac3 from "@/assets/hakkimizda/3.png";
-import tursab from "@/assets/hakkimizda/tursab-logo-png_seeklogo-143326.png";
 
 const HakkimizdaHero = () => {
   return (

@@ -49,11 +49,13 @@ const TurUyari = () => {
   }
 
   return (
-    <div className="bg-white rounded-2xl w-full shadow-lg border border-gray-200 p-2 lg:p-8 flex flex-col gap-6">
+    <div className="flex flex-col justify-start items-start gap-4 p-6 shadow-lg bg-white border border-gray-200 rounded-2xl">
       <div
         className={`left-col w-full h-full flex flex-col justify-start items-start gap-4 p-2 `}
       >
-        <h2 className="text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-4 w-full">❗ Uyarılar</h2>
+        <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] w-full border-b border-gray-200 pb-4">
+          ❗ Uyarılar
+        </h2>
         <ul className="flex flex-col gap-2 w-full">
           {seciliTur.uyarilar && seciliTur.uyarilar.length > 0 ? (
             seciliTur.uyarilar.map((item) => (
@@ -61,8 +63,8 @@ const TurUyari = () => {
                 key={item.id}
                 className="flex justify-start items-start gap-3 w-full"
               >
-                <span className="rounded-full w-2 h-2 bg-red-500 shrink-0 mt-2"></span>
-                <p className="text-lg md:text-lg text-gray-700 font-medium">
+                <span className="rounded-full w-2 h-2 bg-green-500 shrink-0 mt-2"></span>
+                <p className="text-base md:text-lg text-gray-800 leading-relaxed font-medium text-justify">
                   {item.desc}
                 </p>
               </li>
