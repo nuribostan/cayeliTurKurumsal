@@ -39,7 +39,7 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
 
           <TurKapsamlari />
           {tur?.turFotograflari && (
-            <div className="lg:col-span-2 order-3 flex flex-col gap-6 pt-6 lg:pt-0 mt-8">
+            <div className="lg:col-span-2 order-3  flex-col gap-6 pt-6 lg:pt-0 mt-8 hidden md:flex">
               <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-2 max-md:text-center">
                 Tur Fotoğrafları
               </h2>
@@ -73,6 +73,41 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
             </div>
           )}
         </div>
+
+        {tur?.turFotograflari && (
+          <div className="lg:col-span-2 order-3  flex-col gap-6 pt-0 lg:pt-0 mt-8 flex md:hidden">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-2 max-md:text-center">
+              Tur Fotoğrafları
+            </h2>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+              <div className="relative col-span-2 row-span-2 h-56 sm:h-64 lg:h-80 overflow-hidden rounded-2xl shadow-md bg-gray-100">
+                <Image
+                  src={tur.turFotograflari.anaResim}
+                  alt={`${tur.turName || "Tur"} Ana Fotoğrafı`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+
+              {tur.turFotograflari.galeri.map((foto) => (
+                <div
+                  key={foto.id}
+                  className="relative h-44 overflow-hidden rounded-2xl shadow-md bg-gray-100"
+                >
+                  <Image
+                    src={foto.url}
+                    alt={`Tur Fotoğrafı ${foto.id}`}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    className="object-cover hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
 
         <div className="lg:col-span-1 lg:row-span-2 order-2 flex flex-col gap-6 lg:sticky lg:top-24">
           <GezilecekYerler tur={tur} />
