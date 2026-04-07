@@ -17,7 +17,7 @@ const Tavsiyeler = ({ tur }: TurProgramiProps) => {
         {tur?.tavsiyeler.map((item:any, index:number) => (
           <li key={index} className="flex justify-start items-start gap-3 w-full">
             <span className="rounded-full w-2 h-2 bg-[#5a7197] shrink-0 mt-2"></span>
-            <p className="text-base md:text-lg text-gray-800 leading-relaxed font-medium text-justify">{item.desc}</p>
+            <p className="text-base text-gray-800 leading-relaxed font-medium text-justify">{item.desc}</p>
           </li>
         ))}
       </ul>
