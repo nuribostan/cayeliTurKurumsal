@@ -23,7 +23,7 @@ interface TurProgramiProps {
 const TurProgrami = ({ tur }: TurProgramiProps) => {
   return (
     <div className="w-[90%] lg:w-[85%] mx-auto py-12 lg:py-10 flex flex-col gap-4 lg:gap-4">
-      <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-2 max-md:text-center">
+      <h2 className="text-3xl lg:text-4xl font-bold text-[#1f2c42] border-b border-gray-200 pb-2 max-md:text-center">
         Tur Programı
       </h2>
 

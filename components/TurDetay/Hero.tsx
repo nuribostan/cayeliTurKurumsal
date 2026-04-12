@@ -53,7 +53,7 @@ const TurDetayHero = ({ tur }: TurProgramiProps) => {
         />
         <div className="absolute inset-0 bg-black/30 lg:bg-black/10"></div>
 
-        <div className="absolute top-1/4 left-[5%] lg:left-[7.5%] z-10 w-[90%]">
+        <div className="absolute top-1/6 left-[5%] lg:left-[7.5%] z-10 w-[90%]">
           <h1 className="text-shadow-lg text-4xl md:text-5xl lg:text-6xl text-white font-bold flex flex-col lg:flex-row items-start lg:items-end gap-2 lg:gap-4 drop-shadow-lg lg:drop-shadow-none">
             <span>{tur?.turName}</span>
             <span className="font-medium text-white text-2xl md:text-3xl lg:text-4xl">
@@ -62,41 +62,41 @@ const TurDetayHero = ({ tur }: TurProgramiProps) => {
           </h1>
         </div>
 
-        <div className="absolute top-1/2 lg:top-1/3 mt-6 lg:mt-10 left-[5%] lg:left-[7.5%] flex flex-col sm:flex-row items-start sm:items-center gap-4 z-10">
-          <div className="bg-white/95 backdrop-blur-sm px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
+        <div className="absolute top-1/2 lg:top-1/3 mt-0 lg:mt-10 left-[5%] lg:left-[7.5%] flex flex-col sm:flex-row items-start sm:items-center gap-4 z-10">
+          <div className="bg-white/95 backdrop-blur-sm px-3 py-2 sm:py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
             <Image
               src={pin}
               alt="pin"
               width={24}
               height={24}
-              className="shrink-0"
+              className="shrink-0 sm:w-6 sm:h-6 w-4 h-4"
             />
-            <h4 className="text-[#1f2c42] font-bold text-sm md:text-lg">
+            <h4 className="text-[#1f2c42] font-bold text-[12px] md:text-lg">
               {tur?.location}
             </h4>
           </div>
-          <div className="bg-white/95 backdrop-blur-sm px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
+          <div className="bg-white/95 backdrop-blur-sm px-3 py-2 sm:py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
             <Image
               src={bus}
               alt="bus"
               width={24}
               height={24}
-              className="shrink-0"
+              className="shrink-0 sm:w-6 sm:h-6 w-4 h-4"
             />
-            <h4 className="text-[#1f2c42] font-bold text-sm md:text-lg">
+            <h4 className="text-[#1f2c42] font-bold text-[12px] md:text-lg">
               {tur?.kalkis}
             </h4>
           </div>
 
-          <div className="bg-white/95 backdrop-blur-sm px-5 py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
+          <div className="bg-white/95 backdrop-blur-sm px-3 py-2 sm:py-3 rounded-xl flex items-center gap-3 shadow-lg min-w-48">
             <Image
               src={tl}
               alt="tl"
               width={24}
               height={24}
-              className="shrink-0"
+              className="shrink-0 sm:w-6 sm:h-6 w-4 h-4"
             />
-            <h4 className="text-[#1f2c42] font-bold text-sm md:text-lg">
+            <h4 className="text-[#1f2c42] font-bold text-[12px] md:text-lg">
               {tur?.fiyat} TL
             </h4>
           </div>
