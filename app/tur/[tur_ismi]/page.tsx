@@ -36,7 +36,6 @@ async function getTurDetaylari(): Promise<TurItem[]> {
   );
 
   if (!res.ok) {
-    console.error("Veri çekilemedi!");
     return [];
   }
 

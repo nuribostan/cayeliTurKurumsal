@@ -21,12 +21,11 @@ interface TurProgramiProps {
 }
 
 const TurProgrami = ({ tur }: TurProgramiProps) => {
-  console.log("Gelen Tur Verisi:", tur);
   return (
-    <div className="w-[90%] lg:w-[85%] mx-auto py-12 lg:py-10 flex flex-col gap-8 lg:gap-10">
-      <h1 className="text-3xl md:text-4xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-4 max-md:text-center">
+    <div className="w-[90%] lg:w-[85%] mx-auto py-12 lg:py-10 flex flex-col gap-4 lg:gap-4">
+      <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-2 max-md:text-center">
         Tur Programı
-      </h1>
+      </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-5 items-start">
         {/* Sol Kolon: Tur Listesi */}
@@ -40,7 +39,7 @@ const TurProgrami = ({ tur }: TurProgramiProps) => {
           <TurKapsamlari />
           {tur?.turFotograflari && (
             <div className="lg:col-span-2 order-3  flex-col gap-6 pt-6 lg:pt-0 mt-8 hidden md:flex">
-              <h2 className="text-2xl md:text-3xl lg:text-4xl text-[#1f2c42] font-bold border-b border-gray-200 pb-2 max-md:text-center">
+              <h2 className="text-xl lg:text-2xl font-bold text-[#1f2c42] border-b border-gray-200 pb-2 max-md:text-center">
                 Tur Fotoğrafları
               </h2>
 

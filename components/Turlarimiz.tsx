@@ -1,120 +1,94 @@
-import gunubirlik from "@/assets/turlarimiz/la-so-vk4vjTNVrTg-unsplash.jpg";
-import konaklamali from "@/assets/turlarimiz/bjorn-snelders-PeLkhi_B3wI-unsplash.jpg";
-import yurtdisi from "@/assets/turlarimiz/clay-banks-hi_52O-h5G8-unsplash.jpg";
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState, useEffect } from "react";
+
+type Tur = {
+  id: string;
+  image: string;
+  title: string;
+  features: string[];
+  link: string;
+};
 
 const Turlarimiz = () => {
+  const [turlar, setTurlar] = useState<Tur[]>([]);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const fetchTurlar = async () => {
+      try {
+        const FETCH_URL =
+          "https://raw.githubusercontent.com/nuribostan/cayeliTurKurumsalData/refs/heads/main/anasayfaTurlarimiz.json";
+
+        const response = await fetch(FETCH_URL, { cache: "no-store" });
+        if (!response.ok) throw new Error("Tur verisi çekilemedi");
+
+        const data = await response.json();
+
+        if (data.status === true && data.turlar && data.turlar.length > 0) {
+          setTurlar(data.turlar);
+          setIsVisible(true);
+        }
+      } catch (error) {
+        console.error("Turlar verisi alınırken hata oluştu:", error);
+      }
+    };
+
+    fetchTurlar();
+  }, []);
+
+  if (!isVisible) return null;
+
   return (
     <section className="turlarimiz bg-white w-full h-fit py-10 lg:py-10 flex flex-col gap-10">
       <div className="turlarimiz-title text-left w-[90%] lg:w-[85%] mx-auto">
-        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold max-md:text-center border-b border-gray-200 pb-4">
+        <h1 className="text-3xl md:text-4xl text-[#1f2c42] font-bold max-md:text-center border-b border-gray-200 pb-4 text-center">
           Turlarımız
         </h1>
       </div>
 
-      <div className="turlarimiz-grid flex flex-col lg:flex-row justify-center items-stretch gap-8 lg:gap-10 w-[85%]  mx-auto">
-        {/* Kart 1 */}
-        <div className="turlarimiz-card rounded-2xl flex flex-col justify-between items-center gap-5 p-5 shadow-xl w-full lg:w-1/3">
-          <div className="turlarimiz-card-img w-full h-64">
-            <Image
-              src={gunubirlik}
-              alt="Günübirlik Turlar"
-              className="object-cover w-full h-full rounded-2xl"
-            />
-          </div>
-          <div className="turlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full grow">
-            <h2 className="turlarimiz-card-title font-bold text-2xl md:text-3xl text-[#1f2c42]">
-              Günübirlik Turlar
-            </h2>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Şehir kaçamakları
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Kültür & doğa turları
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Hafta sonu için ideal
-            </p>
-          </div>
-          <Link
-            className="bg-blue-600 w-full text-center py-3 rounded-lg text-white font-bold hover:bg-blue-500 transition-colors mt-4"
-            href="/gunubirlik-turlar"
+      <div className="turlarimiz-grid flex flex-col lg:flex-row justify-center items-stretch gap-8 lg:gap-10 w-[85%] mx-auto">
+        {turlar.map((tur) => (
+          <div
+            key={tur.id}
+            className="turlarimiz-card rounded-2xl flex flex-col justify-between items-center gap-5 p-5 shadow-xl w-full lg:w-1/3"
           >
-            Turları İncele
-          </Link>
-        </div>
+            <div className="turlarimiz-card-img w-full h-64 relative">
+              <Image
+                src={tur.image}
+                alt={tur.title}
+                fill
+                className="object-cover rounded-2xl"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
 
-        {/* Kart 2 */}
-        <div className="turlarimiz-card rounded-2xl flex flex-col justify-between items-center gap-5 p-5 shadow-xl w-full lg:w-1/3">
-          <div className="turlarimiz-card-img w-full h-64">
-            <Image
-              src={konaklamali}
-              alt="Konaklamalı Turlar"
-              className="object-cover w-full h-full rounded-2xl"
-            />
-          </div>
-          <div className="turlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full grow">
-            <h2 className="turlarimiz-card-title font-bold text-2xl md:text-3xl text-[#1f2c42]">
-              Konaklamalı Turlar
-            </h2>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              2-3-5 gecelik programlar
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Otel-rehberli tur
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Aile & Grup turları
-            </p>
-          </div>
-          <Link
-            className="bg-blue-600 w-full text-center py-3 rounded-lg text-white font-bold hover:bg-blue-500 transition-colors mt-4"
-            href="/konaklamali-turlar"
-          >
-            Turları İncele
-          </Link>
-        </div>
+            <div className="turlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full grow">
+              <h2 className="turlarimiz-card-title font-bold text-2xl md:text-3xl text-[#1f2c42]">
+                {tur.title}
+              </h2>
 
-        {/* Kart 3 */}
-        <div className="turlarimiz-card rounded-2xl flex flex-col justify-between items-center gap-5 p-5 shadow-xl w-full lg:w-1/3">
-          <div className="turlarimiz-card-img w-full h-64">
-            <Image
-              src={yurtdisi}
-              alt="Yurtdışı Turları"
-              className="object-cover w-full h-full rounded-2xl"
-            />
+              {tur.features.map((feature, idx) => (
+                <p
+                  key={idx}
+                  className="w-full text-left text-black font-medium flex items-center gap-3"
+                >
+                  <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
+                  {feature}
+                </p>
+              ))}
+            </div>
+
+            <Link
+              className="bg-blue-600 w-full text-center py-3 rounded-lg text-white font-bold hover:bg-blue-500 transition-colors mt-4"
+              href={tur.link}
+            >
+              Turları İncele
+            </Link>
           </div>
-          <div className="turlarimiz-card-desc flex flex-col gap-2 justify-start items-start w-full grow">
-            <h2 className="turlarimiz-card-title font-bold text-2xl md:text-3xl text-[#1f2c42]">
-              Yurtdışı Turları
-            </h2>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Vizesiz & vizeli ülkeler
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Kültür & alışveriş keşfi
-            </p>
-            <p className="w-full text-left text-black font-medium flex items-center gap-3">
-              <span className="rounded-full w-2 h-2 bg-black shrink-0"></span>{" "}
-              Profesyonel rehberlik
-            </p>
-          </div>
-          <Link
-            className="bg-blue-600 w-full text-center py-3 rounded-lg text-white font-bold hover:bg-blue-500 transition-colors mt-4"
-            href="/yurtdisi-turlar"
-          >
-            Turları İncele
-          </Link>
-        </div>
+        ))}
       </div>
     </section>
   );

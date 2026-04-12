@@ -21,10 +21,12 @@ const Header = () => {
   const [isMobileGunubirlikOpen, setIsMobileGunubirlikOpen] = useState(false);
   const [isMobileKonaklamaOpen, setIsMobileKonaklamaOpen] = useState(false);
   const [isMobileYurtdisiOpen, setIsMobileYurtdisiOpen] = useState(false);
+  const [isMobileTransferlerOpen, setIsMobileTransferlerOpen] = useState(false);
 
   const [gunubirlikMenu, setGunubirlikMenu] = useState<MenuItem[]>([]);
   const [konaklamaMenu, setKonaklamaMenu] = useState<MenuItem[]>([]);
   const [yurtdisiMenu, setYurtdisiMenu] = useState<MenuItem[]>([]);
+  const [transferlerMenu, setTransferlerMenu] = useState<MenuItem[]>([]);
   const [menuDB, setMenuDB] = useState<MenuItem[]>([]);
 
   useEffect(() => {
@@ -57,6 +59,8 @@ const Header = () => {
         setKonaklamaMenu(item.subMenu ?? []);
       } else if (item.menu === "Yurtdışı Turları") {
         setYurtdisiMenu(item.subMenu ?? []);
+      } else if (item.menu === "Transferler") {
+        setTransferlerMenu(item.subMenu ?? []);
       }
     });
   }, [menuDB]);
@@ -173,6 +177,34 @@ const Header = () => {
 
               <div className="absolute top-full left-0 w-60 bg-white shadow-2xl rounded-b-xl flex-col hidden group-hover:flex z-50 border-t-4 border-blue-600 overflow-hidden py-2">
                 {yurtdisiMenu.map((item, index) => (
+                  <Link
+                    key={index}
+                    href={item.url}
+                    className="w-full border-b border-gray-100 last:border-0 py-3 px-5 hover:bg-blue-50 hover:text-blue-600 transition-colors text-[14px] xl:text-[15px] font-medium text-gray-700 whitespace-normal"
+                  >
+                    {item.menu}
+                  </Link>
+                ))}
+              </div>
+            </li>
+
+            <li className="cursor-pointer relative group flex items-center h-full gap-1">
+              <Link
+                href="/transferler"
+                className="hover:text-blue-600 transition-colors"
+              >
+                Transferler
+              </Link>
+              <Image
+                src={downArrow}
+                alt="ok"
+                width={12}
+                height={12}
+                className="group-hover:rotate-180 transition-transform duration-300 opacity-80"
+              />
+
+              <div className="absolute top-full left-0 w-60 bg-white shadow-2xl rounded-b-xl flex-col hidden group-hover:flex z-50 border-t-4 border-blue-600 overflow-hidden py-2">
+                {transferlerMenu.map((item, index) => (
                   <Link
                     key={index}
                     href={item.url}
@@ -378,6 +410,52 @@ const Header = () => {
               className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileYurtdisiOpen ? "max-h-96 mt-4" : "max-h-0"}`}
             >
               {yurtdisiMenu.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.url}
+                  className="text-base text-gray-600 py-2 pl-4 border-l-2 border-transparent hover:border-blue-600 hover:text-blue-600"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.menu}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Mobil Akordiyon: Transferler */}
+          <div className="flex flex-col border-b border-gray-100 pb-4">
+            <div className="flex justify-between items-center w-full">
+              {/* Yazıya tıklayınca sayfaya gider */}
+              <Link
+                href="/transferler"
+                className="text-xl font-bold hover:text-blue-600 transition-colors grow"
+                onClick={() => setIsOpen(false)}
+              >
+                Transferler
+              </Link>
+
+              {/* Oka tıklayınca alt menüyü açar */}
+              <div
+                className="p-2 cursor-pointer"
+                onClick={() =>
+                  setIsMobileTransferlerOpen(!isMobileTransferlerOpen)
+                }
+              >
+                <Image
+                  src={downArrow}
+                  alt="ok"
+                  width={16}
+                  height={16}
+                  className={`transition-transform duration-300 ${isMobileTransferlerOpen ? "rotate-180" : ""}`}
+                />
+              </div>
+            </div>
+
+            {/* Alt Menü İçeriği */}
+            <div
+              className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileTransferlerOpen ? "max-h-96 mt-4" : "max-h-0"}`}
+            >
+              {transferlerMenu.map((item, index) => (
                 <Link
                   key={index}
                   href={item.url}

@@ -19,7 +19,6 @@ const TurUyari = () => {
 
   const activeTurURL = params?.tur_ismi as string;
 
-  console.log("Active Tur URL:", activeTurURL);
 
   const {
     data: turlar,
