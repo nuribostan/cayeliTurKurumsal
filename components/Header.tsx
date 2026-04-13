@@ -319,7 +319,7 @@ const Header = () => {
 
             {/* Alt Menü İçeriği */}
             <div
-              className={`flex flex-col gap-1 overflow-hidden transition-all duration-300 ${isMobileGunubirlikOpen ? "max-h-96 mt-4" : "max-h-0"}`}
+              className={`flex flex-col gap-1 transition-all duration-300 overflow-y-scroll ${isMobileGunubirlikOpen ? "max-h-96 mt-4" : "max-h-0"}`}
             >
               {gunubirlikMenu.map((item, index) => (
                 <Link
