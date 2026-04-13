@@ -17,7 +17,7 @@ interface TurData {
 const TurUyari = () => {
   const params = useParams();
 
-  const activeTurURL = params?.tur_ismi as string;
+  const activeTurURL = params?.tur_ismi ? params?.tur_ismi : params?.transfer_ismi as string;
 
 
   const {
@@ -38,6 +38,7 @@ const TurUyari = () => {
   const seciliTur = (turlar as TurData[])?.find(
     (tur) => tur.turURL === activeTurURL,
   );
+
 
   if (!seciliTur) {
     return (

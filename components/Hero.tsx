@@ -58,12 +58,12 @@ const Hero = () => {
 
       <div className="hero-content w-full h-full flex flex-col justify-center lg:justify-start items-center lg:items-start gap-10 p-5 lg:pl-24 lg:pt-24 z-10">
         <div className="hero-title flex flex-col justify-center lg:justify-start items-center lg:items-start gap-5 z-10">
-          <h1 className="text-4xl lg:text-5xl text-white lg:text-[#1f2c42] font-bold text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
+          <h1 className="text-shadow-lg text-shadow-black text-4xl lg:text-5xl text-white  font-bold text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
             {heroData.title_line1} <br className="hidden md:block" />
             {heroData.title_line2}
           </h1>
 
-          <h2 className="text-xl lg:text-2xl text-gray-200 lg:text-[#263144] font-medium text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
+          <h2 className="text-shadow-lg text-shadow-black text-xl lg:text-2xl text-gray-200 font-medium text-left lg:text-start drop-shadow-md lg:drop-shadow-none">
             {heroData.subtitle_line1} <br className="hidden md:block" />
             {heroData.subtitle_line2}
           </h2>

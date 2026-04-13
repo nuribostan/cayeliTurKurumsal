@@ -190,7 +190,7 @@ const Header = () => {
 
             <li className="cursor-pointer relative group flex items-center h-full gap-1">
               <Link
-                href="/transferler"
+                href="/transfer"
                 className="hover:text-blue-600 transition-colors"
               >
                 Transferler
@@ -427,7 +427,7 @@ const Header = () => {
             <div className="flex justify-between items-center w-full">
               {/* Yazıya tıklayınca sayfaya gider */}
               <Link
-                href="/transferler"
+                href="/transfer"
                 className="text-xl font-bold hover:text-blue-600 transition-colors grow"
                 onClick={() => setIsOpen(false)}
               >

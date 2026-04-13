@@ -20,7 +20,7 @@ const GunubirlikHero = () => {
     const fetchHeroBg = async () => {
       try {
         const FETCH_URL =
-          "https://raw.githubusercontent.com/nuribostan/cayeliTurKurumsalData/refs/heads/main/konaklamaliHero.json";
+          "https://raw.githubusercontent.com/nuribostan/cayeliTurKurumsalData/refs/heads/main/transferHero.json";
 
         const response = await fetch(FETCH_URL, { cache: "no-store" });
         if (!response.ok) throw new Error("Arka plan verisi çekilemedi");

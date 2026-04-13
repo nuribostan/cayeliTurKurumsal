@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
+import TransferAciklama from "@/components/TranferPage/Aciklama";
 import TurDetayHero from "@/components/TurDetay/Hero";
-import TurProgrami from "@/components/TurDetay/TurProgrami";
 
 export interface TurItem {
   turURL: string;
@@ -64,7 +64,7 @@ export default async function TurDetay({ params }: TurDetayProps) {
       <Header />
       <div className="turDetay-content w-full bg-white pb-20 text-black">
         <TurDetayHero tur={tur} />
-        <TurProgrami tur={tur} />
+        <TransferAciklama />
       </div>
     </div>
   );
