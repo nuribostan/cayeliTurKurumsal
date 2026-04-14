@@ -16,9 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Çayeli Tur",
   description: "Çayeli Tur Kurumsal Sitesi",
-    icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+  icons: {
+    icon: "/favicon-v2.ico",
+    shortcut: "/favicon-v2.ico",
+    apple: "/favicon-v2.ico",
   },
 };
 
