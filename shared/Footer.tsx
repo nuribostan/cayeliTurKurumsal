@@ -12,10 +12,6 @@ const Footer = () => {
           <ul className="flex flex-col gap-2">
             <li className="text-gray-800"><strong>Şirket Ünvanı:</strong> Rize Birlik Çay Turizm Ltd Şti.</li>
             <li className="text-gray-800"><strong>Marka Adı:</strong> Çayeli Tur</li>
-            <li className="text-gray-800"><strong>Türsab Belge No:</strong> 9652</li>
-            <li className="pt-2">
-              <Image src={tursab} alt="Tursab" width={180} height={180} className="object-contain" />
-            </li>
           </ul>
         </div>
 

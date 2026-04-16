@@ -14,52 +14,6 @@ const HakkimizdaHero = () => {
             Hakkımızda
           </h1>
 
-          <ul className="flex flex-col gap-4 w-full lg:w-3/4 text-gray-800">
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Şirket Ünvanı:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">
-                Rize Birlik Çay Turizm Ltd Şti.
-              </p>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Vergi Dairesi ve No:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">
-                Çayeli V.D. 7350232798
-              </p>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Ticaret Sicil No:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">Çayeli - 1581</p>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Mersis No:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">0735023279800029</p>
-            </li>
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Merkez:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">
-                Yenipazar Mah. 9Mart Cad. No:108/B Çayeli-RİZE
-              </p>
-            </li>
-
-            <li className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
-              <span className="text-lg md:text-lg font-bold text-black sm:w-1/3 shrink-0">
-                Tursab Belge No:
-              </span>
-              <p className="text-base md:text-lgsm:w-2/3">9652</p>
-            </li>
-          </ul>
-
           <div className="flex flex-col gap-4 mt-4">
             <p className="text-gray-700 text-base md:text-lg lg:text-lg text-justify leading-relaxed ">
               Rize Birlik Çay Turizm Ltd Şti. 2008 yılında sektöre taşımacılık

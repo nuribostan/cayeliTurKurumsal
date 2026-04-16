@@ -12,6 +12,7 @@ export interface TurItem {
   kalkis_saat_1: string;
   kalkis_saat_2: string;
   donus_saat: string;
+  aciklama: string;
   turFotograflari?: {
     anaResim: string;
     galeri: Array<{ id: number; url: string }>;
@@ -20,6 +21,7 @@ export interface TurItem {
   list: Array<{ id: number; desc: string }>;
   gezilecekYerler: Array<{ id: number; desc: string }>;
   tavsiyeler: Array<{ id: number; desc: string }>;
+  uyarilar: Array<{ id: number; desc: string }>;
 }
 interface TurDetayProps {
   params: Promise<{
@@ -64,7 +66,7 @@ export default async function TurDetay({ params }: TurDetayProps) {
       <Header />
       <div className="turDetay-content w-full bg-white pb-20 text-black">
         <TurDetayHero tur={tur} />
-        <TransferAciklama />
+        <TransferAciklama aciklama={tur.aciklama} uyarilar={tur.uyarilar} />
       </div>
     </div>
   );
